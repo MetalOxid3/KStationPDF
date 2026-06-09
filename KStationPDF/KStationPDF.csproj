@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RepositoryUrl>https://github.com/MetalOxid3/KStationPDF</RepositoryUrl>
+    <Copyright>Copyright (c) MetalOxide3</Copyright>
+    <Authors>MetalOxide3</Authors>
+    <Description>Remove PDF object stream compression. No Adobe Acrobat required.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="qpdf\bin\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
